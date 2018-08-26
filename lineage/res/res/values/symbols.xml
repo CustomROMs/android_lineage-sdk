@@ -40,6 +40,7 @@
 
     <!-- Proximity check on screen on -->
     <java-symbol type="bool" name="config_proximityCheckOnWake" />
+    <java-symbol type="bool" name="config_haveHigherAspectRatioScreen" />
 
     <!-- Proximity check timeout -->
     <java-symbol type="integer" name="config_proximityCheckTimeout" />
