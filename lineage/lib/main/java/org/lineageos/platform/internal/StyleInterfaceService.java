@@ -196,6 +196,8 @@ public class StyleInterfaceService extends LineageSystemService {
             String currentDarkOverlay = LineageSettings.System.getString(
                     mContext.getContentResolver(), LineageSettings.System.BERRY_DARK_OVERLAY,
                     StyleInterface.OVERLAY_DARK_DEFAULT);
+            if (currentDarkOverlay == null)
+                currentDarkOverlay = StyleInterface.OVERLAY_DARK_DEFAULT;
             if (isEnabled(currentDarkOverlay)) {
                 // Swich dark overlays
                 mOverlayService.setEnabled(currentDarkOverlay, false, userId);
